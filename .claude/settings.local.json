@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find e:/Projects/Website/cihangir-home/public -name *.png -o -name *.ico -o -name logo*)"
+    ]
+  }
+}

@@ -4,6 +4,7 @@ import { HeroParallax } from "@/components/HeroParallax";
 import { FadeInStagger, FadeInItem } from "@/components/FadeInScroll";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { WorksSection } from "@/components/WorksSection";
 
 export default function Home() {
     return (
@@ -11,13 +12,13 @@ export default function Home() {
             <Header />
 
             {/* --- HERO SECTION --- */}
-            <HeroParallax backgroundImage="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=2000">
+            <HeroParallax backgroundImage="/hero.jpeg">
                 <div className="w-12 h-[1px] bg-primary mb-8" />
                 <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight text-white mb-6 drop-shadow-lg leading-tight">
                     Evinizin Kıyafeti İçin <span className="italic font-light">Tasarlıyoruz.</span>
                 </h1>
                 <p className="font-sans text-lg md:text-xl text-white/90 max-w-2xl font-light tracking-wide leading-relaxed mb-12">
-                    Kalite tesadüf değildir. Masadağı&apos;nda, evinize özel dokunuşlar.
+                    Kalite tesadüf değildir. Antalya Masadağında, evinize özel dokunuşlar.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center gap-10 mt-8">
                     <a href="#koleksiyon" className="group flex items-center gap-6 cursor-pointer">
@@ -71,9 +72,6 @@ export default function Home() {
                                     <span className="text-primary text-xs tracking-[0.4em] uppercase mb-4 opacity-70">01 — {siteConfig.collection[0].category}</span>
                                     <h3 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">{siteConfig.collection[0].title}</h3>
                                     <p className="text-foreground/60 font-light leading-loose text-sm mb-10">{siteConfig.collection[0].description}</p>
-                                    <button className="text-[10px] tracking-[0.2em] uppercase border-b border-foreground/30 pb-2 hover:border-primary transition-colors duration-500">
-                                        İncele
-                                    </button>
                                 </div>
                             </FadeInItem>
                         )}
@@ -95,9 +93,6 @@ export default function Home() {
                                     <span className="text-primary text-xs tracking-[0.4em] uppercase mb-4 opacity-70">02 — {siteConfig.collection[1].category}</span>
                                     <h3 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">{siteConfig.collection[1].title}</h3>
                                     <p className="text-foreground/60 font-light leading-loose text-sm mb-10 max-w-sm">{siteConfig.collection[1].description}</p>
-                                    <button className="text-[10px] tracking-[0.2em] uppercase border-b border-foreground/30 pb-2 hover:border-primary transition-colors duration-500">
-                                        İncele
-                                    </button>
                                 </div>
                             </FadeInItem>
                         )}
@@ -119,13 +114,23 @@ export default function Home() {
                                     <span className="text-primary text-xs tracking-[0.4em] uppercase mb-4 opacity-70">03 — {siteConfig.collection[2].category}</span>
                                     <h3 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">{siteConfig.collection[2].title}</h3>
                                     <p className="text-foreground/60 font-light leading-loose text-sm mb-10 max-w-sm">{siteConfig.collection[2].description}</p>
-                                    <button className="text-[10px] tracking-[0.2em] uppercase border-b border-foreground/30 pb-2 hover:border-primary transition-colors duration-500">
-                                        İncele
-                                    </button>
                                 </div>
                             </FadeInItem>
                         )}
                     </div>
+                </FadeInStagger>
+            </section>
+
+            {/* --- WORKS SECTION --- */}
+            <section id="galeri" className="py-24 md:py-40 px-6 md:px-12 lg:px-24 bg-background">
+                <FadeInStagger className="max-w-[1400px] mx-auto">
+                    <FadeInItem className="mb-16 md:mb-24">
+                        <h2 className="font-serif text-5xl md:text-7xl text-foreground tracking-tight">Çalışmalarımız</h2>
+                        <div className="w-24 h-[1px] bg-primary mt-8" />
+                    </FadeInItem>
+                    <FadeInItem>
+                        <WorksSection photos={siteConfig.gallery.photos} videos={siteConfig.gallery.videos} />
+                    </FadeInItem>
                 </FadeInStagger>
             </section>
 

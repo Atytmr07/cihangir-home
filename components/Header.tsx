@@ -32,6 +32,7 @@ export function Header() {
                     <nav className="hidden md:flex gap-10">
                         {[
                             { name: "Koleksiyon", id: "koleksiyon" },
+                            { name: "Çalışmalarımız", id: "galeri" },
                             { name: "Yorumlar", id: "yorumlar" },
                             { name: "İletişim", id: "iletisim" },
                         ].map((item) => (
