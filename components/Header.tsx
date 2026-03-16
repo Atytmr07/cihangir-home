@@ -63,6 +63,7 @@ export function Header() {
                 <nav className="flex flex-col gap-10 text-center">
                     {[
                         { name: "Koleksiyon", id: "koleksiyon" },
+                        { name: "Çalışmalarımız", id: "galeri" },
                         { name: "Yorumlar", id: "yorumlar" },
                         { name: "İletişim", id: "iletisim" },
                     ].map((item) => (

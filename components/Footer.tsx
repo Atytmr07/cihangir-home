@@ -42,6 +42,7 @@ export function Footer() {
                         <ul className="flex flex-col gap-5">
                             {[
                                 { name: "Koleksiyon", id: "koleksiyon" },
+                                { name: "Çalışmalarımız", id: "galeri" },
                                 { name: "Yorumlar", id: "yorumlar" },
                                 { name: "İletişim", id: "iletisim" },
                             ].map((item) => (
