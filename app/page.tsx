@@ -17,6 +17,9 @@ export default function Home() {
                 <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl tracking-tight text-white mb-6 drop-shadow-lg leading-tight">
                     Evinizin Kıyafeti İçin <span className="italic font-light">Tasarlıyoruz.</span>
                 </h1>
+                <p className="text-xs tracking-[0.3em] uppercase text-white/50 mb-6 font-sans">
+                    Antalya &nbsp;·&nbsp; Kepez &nbsp;·&nbsp; Masadağı &nbsp;·&nbsp; Perde Mağazası
+                </p>
                 <p className="font-sans text-lg md:text-xl text-white/90 max-w-2xl font-light tracking-wide leading-relaxed mb-12">
                     Kalite tesadüf değildir. Antalya Masadağında, evinize özel dokunuşlar.
                 </p>
@@ -60,7 +63,7 @@ export default function Home() {
                                 <div className="w-full md:w-3/5 relative overflow-hidden h-[60vh] md:h-[80vh]">
                                     <Image
                                         src={siteConfig.collection[0].image}
-                                        alt={siteConfig.collection[0].title}
+                                        alt={`${siteConfig.collection[0].title} - Antalya Kepez Perde Mağazası`}
                                         fill
                                         sizes="(max-width: 768px) 100vw, 60vw"
                                         className="object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110"
@@ -82,7 +85,7 @@ export default function Home() {
                                 <div className="w-full md:w-1/2 relative overflow-hidden h-[50vh] md:h-[70vh]">
                                     <Image
                                         src={siteConfig.collection[1].image}
-                                        alt={siteConfig.collection[1].title}
+                                        alt={`${siteConfig.collection[1].title} - Kepez Antalya Perdeci`}
                                         fill
                                         sizes="(max-width: 768px) 100vw, 50vw"
                                         className="object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110"
@@ -103,7 +106,7 @@ export default function Home() {
                                 <div className="w-full md:w-[45%] relative overflow-hidden h-[45vh] md:h-[65vh]">
                                     <Image
                                         src={siteConfig.collection[2].image}
-                                        alt={siteConfig.collection[2].title}
+                                        alt={`${siteConfig.collection[2].title} - Antalya Masadağı Perde`}
                                         fill
                                         sizes="(max-width: 768px) 100vw, 45vw"
                                         className="object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-110"
@@ -157,6 +160,41 @@ export default function Home() {
                             </FadeInItem>
                         ))}
                     </div>
+                </FadeInStagger>
+            </section>
+
+            {/* --- SERVICES / SEO SECTION --- */}
+            <section className="py-20 px-6 md:px-12 lg:px-24 bg-zinc-50/80">
+                <FadeInStagger className="max-w-7xl mx-auto">
+                    <FadeInItem className="mb-14">
+                        <h2 className="font-serif text-4xl md:text-5xl text-foreground tracking-tight">
+                            Antalya Kepez&apos;de Perde Hizmetleri
+                        </h2>
+                        <div className="w-16 h-[1px] bg-primary mt-6" />
+                    </FadeInItem>
+                    <FadeInItem className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                        <div>
+                            <h3 className="font-semibold text-foreground text-lg mb-3">Tül & Fon Perde Dikimi</h3>
+                            <p className="text-foreground/60 text-sm font-light leading-relaxed">
+                                Antalya Kepez Masadağı mağazamızda ölçüye özel tül perde ve fon perde dikimi yapıyoruz.
+                                Aynı gün teslimat seçeneğiyle perdeci arayışınıza son veriyoruz.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold text-foreground text-lg mb-3">Jaluzi & Stor Perde Montajı</h3>
+                            <p className="text-foreground/60 text-sm font-light leading-relaxed">
+                                Kepez, Konyaaltı ve Muratpaşa dahil Antalya genelinde ahşap jaluzi, alüminyum jaluzi
+                                ve stor perde montajı gerçekleştiriyoruz.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold text-foreground text-lg mb-3">Ev & İşyeri Perde Çözümleri</h3>
+                            <p className="text-foreground/60 text-sm font-light leading-relaxed">
+                                Masadağı&apos;ndan tüm Antalya&apos;ya perde montaj hizmeti. Ev, ofis ve konut projeleri için
+                                profesyonel ölçüm, dikim ve kurulum yapıyoruz.
+                            </p>
+                        </div>
+                    </FadeInItem>
                 </FadeInStagger>
             </section>
 
