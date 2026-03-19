@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cihangirperde.com.tr/sitemap.xml
+Sitemap: https://www.cihangirperde.com.tr/sitemap.xml

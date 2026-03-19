@@ -5,7 +5,7 @@ import './globals.css'
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair-display' })
 
-const siteUrl = "https://cihangirperde.com.tr"
+const siteUrl = "https://www.cihangirperde.com.tr"
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
