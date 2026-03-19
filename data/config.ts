@@ -1,6 +1,6 @@
 export const siteConfig = {
-  title: "Cihangir Home | Luxury Curtain ve Textiles",
-  name: "Cihangir Home",
+  title: "Cihangir Perde | Luxury Curtain ve Textiles",
+  name: "Cihangir Perde",
   description: "Evinizin Kıyafeti İçin Tasarlıyoruz. Kalite tesadüf değildir. Antalya Masadağında, evinize özel dokunuşlar.",
   contact: {
     address: "Çankaya Mah. Barış Manço Bulvarı, Nadir Alper İş Merkezi No: 210/A, Kepez",

@@ -26,7 +26,7 @@ export function Header() {
             >
                 <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
                     <a href="#" className="font-serif text-2xl tracking-[0.2em] uppercase text-primary transition-colors duration-500 hover:opacity-80">
-                        Cihangir Home
+                        Cihangir Perde
                     </a>
 
                     <nav className="hidden md:flex gap-10">

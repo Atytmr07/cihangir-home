@@ -11,7 +11,7 @@ export function Footer() {
 
                     {/* Main Brand & Contact Col */}
                     <FadeInItem className="md:col-span-5">
-                        <h4 className="font-serif text-3xl md:text-5xl mb-6 leading-tight text-primary">Cihangir Home</h4>
+                        <h4 className="font-serif text-3xl md:text-5xl mb-6 leading-tight text-primary">Cihangir Perde</h4>
                         <p className="font-light text-background/60 leading-relaxed mb-10 max-w-sm text-lg">
                             Evinize en uygun tekstil çözümleri için mağazamızı ziyaret edebilir veya hemen arayabilirsiniz.
                         </p>
@@ -78,7 +78,7 @@ export function Footer() {
 
                 <FadeInItem className="mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-[10px] tracking-[0.2em] text-background/40 uppercase text-center md:text-left">
-                        © {new Date().getFullYear()} Cihangir Home. Tüm Hakları Saklıdır.
+                        © {new Date().getFullYear()} Cihangir Perde. Tüm Hakları Saklıdır.
                     </p>
                     <p className="text-[10px] tracking-[0.2em] text-primary uppercase text-center md:text-right">
                         {siteConfig.contact.deliveryFeature}
