@@ -10,10 +10,10 @@ const siteUrl = "https://www.cihangirperde.com.tr"
 export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
     title: {
-        default: "Cihangir Perde | Perde & Dekorasyon Antalya Kepez",
+        default: "Antalya Kepez Masadağı Perde Mağazası | Cihangir Perde",
         template: "%s | Cihangir Perde",
     },
-    description: "Antalya Kepez Masadağı'nda tül perde, fon perde, jaluzi ve ev tekstili. Ölçüye özel perde dikimi, aynı gün teslimat. Cihangir Perde.",
+    description: "Masadağı Kepez'de perde mağazası arıyorsanız Cihangir Perde'yi arayın. Tül perde, fon perde, jaluzi ve stor perde dikimi. Ölçüye özel, aynı gün montaj. 0539 702 00 41",
     keywords: [
         "perde antalya", "perde kepez", "perde masadağı",
         "perdeci antalya", "perdeci kepez", "antalya perdeci", "masadağı perdeci",
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
         locale: "tr_TR",
         url: siteUrl,
         siteName: "Cihangir Perde",
-        title: "Cihangir Perde | Perde & Dekorasyon Antalya Kepez",
-        description: "Antalya Kepez Masadağı'nda tül perde, fon perde, jaluzi ve ev tekstili. Ölçüye özel perde dikimi, aynı gün teslimat.",
+        title: "Antalya Kepez Masadağı Perde Mağazası | Cihangir Perde",
+        description: "Masadağı Kepez'de perde arıyorsanız Cihangir Perde'yi arayın. Tül perde, fon perde, jaluzi ve stor perde dikimi. Ölçüye özel, aynı gün montaj.",
         images: [
             {
                 url: "/hero.jpeg",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Cihangir Perde | Perde & Dekorasyon Antalya",
+        title: "Antalya Kepez Masadağı Perde Mağazası | Cihangir Perde",
         description: "Antalya Kepez Masadağı'nda tül perde, fon perde, jaluzi ve ev tekstili.",
         images: ["/hero.jpeg"],
     },
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "Store"],
+    "@type": "HomeGoodsStore",
     "name": "Cihangir Perde",
     "image": `${siteUrl}/hero.jpeg`,
     "url": siteUrl,

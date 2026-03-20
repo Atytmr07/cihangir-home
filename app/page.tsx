@@ -21,7 +21,7 @@ export default function Home() {
                     Antalya &nbsp;·&nbsp; Kepez &nbsp;·&nbsp; Masadağı &nbsp;·&nbsp; Perde Mağazası
                 </p>
                 <p className="font-sans text-lg md:text-xl text-white/90 max-w-2xl font-light tracking-wide leading-relaxed mb-12">
-                    Kalite tesadüf değildir. Antalya Masadağında, evinize özel dokunuşlar.
+                    Masadağı&apos;nın perdecisi. Kepez&apos;den tüm Antalya&apos;ya tül perde, fon perde ve jaluzi — ölçüye özel, aynı gün teslim.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center gap-10 mt-8">
                     <a href="#koleksiyon" className="group flex items-center gap-6 cursor-pointer">
